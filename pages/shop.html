@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Funkoshop</title>
+</head>
+<body>
+    <header> <!-- comienzo de Header -->
+        <nav>
+            <picture>
+                <a href="../index.html">
+                      <img src="../image/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funko Pop">
+                </a>
+            </picture>
+            <ul>
+                <li>
+                    <a href="./pages/shop.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="./pages/contact.html">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="./pages/login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="./pages/carrito.html">
+                        <img src="../image/multimedia/icons/cart-icon.svg" alt="ícono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header><!-- Fin de Header -->
+    <main>
+        <aside>
+            <section>
+                <form action="">
+                    <div>
+                        <p>BUSCAR</p>
+                        <input type="text" name="producto">
+                   </div>
+                    <div>
+                            <p>ORDENAR POR</p>
+                        <select name="ORDEN" id=""> 
+                            <option value="Mayor a menor">Mayor a menor</option> 
+                        </select>
+                    </div>
+                    <div>
+                        <p>PRECIO</p>
+                        <label for="Min">MIN</label>
+                        <input type="number" name="Min">
+                        <label for="Max">MAX</label>
+                        <input type="number" name="Max">
+                    </div>
+                    <div>
+                        <p>FILTRAR</p>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="NUEVOS" id="" value="Nuevos">
+                                <label for="NUEVOS">NUEVOS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="OFERTAS" id="" value="Ofertas">
+                                <label for="OFERTAS">OFERTAS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="EDICIÓN ESPECIAL" id="" value="Edicion especial">
+                                <label for="EDICIÓN ESPECIAL">EDICIÓN</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="FAVORITOS" id="" value="Favoritos">
+                                <label for="FAVORITOS">FAVORITOS</label>
+                            </li>
+                        </ul>
+                    </div>
+                </form>    
+            </section>
+        </aside>
+    </main>
+</body>
+</html>
