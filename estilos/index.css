@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
 
+::-webkit-scrollbar {display: none;}
+
 :root{
     /*Palette */
     --primary-solid: #FF3333;
@@ -23,6 +25,7 @@
 
     --base-font :'inter',sans-serif;
     --alternative-font: 'Raleway', sans-serif;
+
          /*Font-sizes */
     --font-display: 4.6em;
     --font-jumbo : 3.8em;
@@ -57,7 +60,19 @@ html{
     color: #111111;
 }
 
-
+h2{ 
+    font-weight: 700;
+    font-size: var(--font-jumbo);
+    font-family: 'Raleway', sans-serif;
+    color: inherit;
+}
+hr{
+    height: 0px;
+    margin-top: var(--spacing-36);
+    border: 3px solid;
+    border-color: var(--primary-solid);
+    width: 580px;
+}
 a{
     text-decoration: none;
     font-size: 2em;
@@ -67,10 +82,15 @@ a{
 
 header,
 footer{ 
-        font-family: 'Raleway', sans-serif;
-        color: white;
-        background-color: var(--dark-bg-solid);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-solid);
+    padding: 20px;
+    color: white;
 }
+
 
 
 ul,
@@ -79,15 +99,137 @@ ol{
     
 }
 
-nav li{
-    display: inline-block;
-}
 
 p{
-    font-size: 1.8em;
+    font-size: var(--font-small);
+    font-family: var(--alternative-font);
+    font-weight: 400;
+    color: inherit;
 }
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    background-color: var(--ligth-bg-solid);
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* dirección horizontal */
+    position: relative;
+    
+    left: 700px;
+  }
+
+header ul li {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 0 10px;
+        position: relative; }
+
+nav{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    padding: 20px;}    
+.Hero{
+    background-image: url(../image/multimedia/funkos-banner.webp);
+    background-size: cover;
+    backdrop-filter: blur(500px);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 510px;
+    color: white;
+}
+.Hero::after{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.HeroP{
+    height: 300px; 
+    display: block;
+    padding: 50px; 
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.btnShop{
+    background-color: var(--ligth-bg-solid);
+    font-family: var(--base-font);
+    margin-top: 35px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: var(--font-medium);
+    font-family:var(--base-font);
+    font-weight: 500;
+    display: inline-block;
+    width: 200px;
+    height: 47px;
+    text-align: center;
+    color: var(--dark-solid);
+} 
+.btnShop:hover{
+    background-color: #1D84B533;
+    color: var(--ligth-bg-solid);
+    transition: 0.5s;
+}
+
+.MainCard{
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.MainCard h3{
+    font-size: var(--font-display);
+    font-family: var(--alternative-font);
+    font-weight: 500;
+}
+
+.Paragraph{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--ligth-bg-solid);
+    height: 400px;
+    width: 450px;
+    position: relative;
+}
+.Paragraph .btnShop{
+    background-color: var(--dark-bg-solid);
+    color: white;
+}
+.Paragraph .btnShop:hover{
+    background-color: #1D84B566;
+    color: var(--dark-bg-solid);
+    transition: 0.5s;
+}
+.izq{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.izq .Paragraph{
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+.izq picture{
+    position: relative;
+    width: 100%;
 }
