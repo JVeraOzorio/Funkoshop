@@ -155,6 +155,7 @@ header{
     position: absolute;
     background-color: var(--dark-bg-solid);
     border-radius: 5px;
+    z-index: 3;
 }
 
 .submenu__link{
@@ -199,6 +200,7 @@ header{
     gap: var(--spacing-20);
     align-items: start;
     position: relative;
+    z-index: 2;
 }
 
 .Hero__title{
@@ -234,6 +236,7 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    padding: (var(--spacing-16)) 0;
 }
 
 .Collection:nth-child(2) .Collection__cover{
@@ -274,4 +277,93 @@ header{
 
 .Collection__link:hover{
     background-color: var(--primary-900);
+}
+
+/* SLIDER */
+
+.Slider{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
+}
+
+.Slider__title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    text-transform: uppercase;
+}
+
+.Slider__items{
+    display: flex;
+    gap: var(--spacing-24);
+}
+
+.Card-Item__content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    padding: var(--spacing-16);
+}
+
+.Card-Item__license{
+    font-family: var(--alternative-font);
+    font-size: var(--font-Xsmal);
+    color: var(--dark-font-solid);
+    font-weight: 500;
+}
+.Card-Item__name{
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+.Card-Item__price{
+    font-family: var(--alternative-font);
+    font-size: var(--font-small);
+}
+.Card-Item__promo{
+    font-family: var(--alternative-font);
+    font-size: var(--font-small);
+    color: var(--secondary-solid);
+    font-weight: 500;
+}
+
+/* CARD */
+
+.Card-Item__cover{
+    display: flex;
+    position: relative;
+}
+
+.Card-Item__tag{
+    font-size: x-small;
+    text-transform: uppercase;
+    background-color: var(--primary-solid);
+    color: var(--ligth-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    right: 0;
+}
+
+.Card-Item__cover img{
+    animation: fade .9s;
+}
+
+.Card-Item__img--back{
+    display: none;
+}
+.Card-Item__cover:hover .Card-Item__img--back {
+    display: block;
+}
+.Card-Item__cover:hover .Card-Item__img--front {
+    display: none;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
