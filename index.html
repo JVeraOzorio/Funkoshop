@@ -5,38 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Funkoshop</title>
-    <link rel = "stylesheet" href="estilos/index.css"
+    <link rel = "stylesheet" href="estilos/index.css">
 </head>
 <body>
     <header> <!-- comienzo de Header -->
-        <nav>
-            <picture>
+        <nav class="navBar container">
+            <picture class=" navBar__logo">
                 <a href="./index.html">
                       <img src="./image/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funko Pop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">SHOP</a>
+            <ul class="navBar__menu">
+                <li class="navegador__menu-item whit-Submenu">
+                    <a class="navBar__link whit-Icon" href="./pages/shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">FUNKOS</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">REMERAS</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">LLAVEROS</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./pages/contact.html">CONTACTO</a>
+                <li class="navegador__menu-item">
+                    <a class="navBar__link" href="./pages/contact.html">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="./pages/login.html">LOGIN</a>
+                <li class="navegador__menu-item">
+                    <a class="navBar__link" href="./pages/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./pages/carrito.html">
+                <li class="navegador__menu-item">
+                    <a class="navBar__cart" href="./pages/carrito.html">
                         <img src="./image/multimedia/icons/cart-icon.svg" alt="ícono de carrito">
                     </a>
                 </li>
             </ul>
         </nav>
     </header><!-- Fin de Header -->
-    <main class="container">
-        <section>
-            <article>
-                <h3>Nuevos Ingresos</h3>
+    <main >
+        <section class=>
+            <article class=>
+                <h3 >Nuevos Ingresos</h3>
                 <p> Descubrí el próximo Funko Pop de tu colección</p>
                 <a href="./pages/shop.html">SHOP</a>
             </article>
@@ -140,5 +151,7 @@
         </section>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
