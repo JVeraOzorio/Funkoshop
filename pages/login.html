@@ -5,60 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" href="../estilos/index.css">
+
 </head>
 <body>
-    <header> <!-- comienzo de Header -->
-        <nav>
-            <picture>
-                <a href="./login.html">
+    <header> <!-- beginning of the header -->
+        <nav class="navBar container">
+            <picture class=" navBar__logo">
+                <a href="./index.html">
                       <img src="../image/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funko Pop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="../index.html">SALIR</a>
+            <ul class="navBar__menu">
+                <li class="navegador__menu-item whit-Submenu">
+                    <a class="navBar__link whit-Icon" href="./pages/shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">FUNKOS</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">REMERAS</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">LLAVEROS</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navegador__menu-item">
+                    <a class="navBar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+                <li class="navegador__menu-item">
+                    <a class="navBar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navegador__menu-item">
+                    <a class="navBar__cart" href="./pages/carrito.html">
+                        <img src="./image/multimedia/icons/cart-icon.svg" alt="ícono de carrito">
+                    </a>
                 </li>
             </ul>
         </nav>
-    </header><!-- Fin de Header -->
-    <main><!--Comienzo de main-->
-        <article>
-            <form action="">
-                <h3>INGRESAR A MI CUENTA</h3>
-                <label for="E-MAIL">E-MAIL</label>
-                <input type="email" name="E-MAIL" id="E-MAIL">
-                <label for="Contraseña">Contraseña</label>
-                <input type="password" name="Contraseña" id="Contraseña">
-                <button>ingresar</button>
-                <input type="checkbox" name="Recordarme" id="recordarme">
-                <label for="Recordarme">Recordarme</label>
+    </header><!-- end of the header  -->
+    <main><!-- beginning of the header-->
+        <article class="Login container">
+
+                <h2 class="Login__title">INGRESAR A MI CUENTA</h2>
+
+                <form action="" class="">
+
+                    <div class="Login__content">
+                        <label class="Login__text"  for="E-MAIL">E-MAIL:</label>
+                        <input class="Login__inputTxt" placeholder="E-MAIL" type="email" name="E-MAIL" id="E-MAIL">
+    
+                        <label class="Login__text" for="Contraseña">Contraseña:</label>
+                        <input class="Login__inputTxt" type="password" placeholder="Password" name="Contraseña" id="Contraseña">
+                    </div>
+
+                    <div class="Login__check">
+                        <button class="Login__button" type="submit">Ingresar</button>
+
+                        <div>
+                            <input type="checkbox" name="Recordarme" id="recordarme">
+                            <label class="Login__record" for="Recordarme">Recordarme</label>
+                        </div>
+                    </div>
+                </form>
+
                 <a href="">Olvidé mi contraseña</a>
-            </form>
         </article>
-    </main><!--Fin de main-->
-    <footer><!--comienzo de footer-->
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="./register.html">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="./login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">CONTACTO</a>
-                    </li>
-                </ul>
-                <picture>
-                    <img src="../image/multimedia/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-                </picture>
-            </nav>
-        </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer><!--fin de footer-->
+    </main><!-- end of the main -->
+    <footer>
+        <nav class="navBar container">
+            <ul class="navBar__item">
+                <li class="navBar__item"> 
+                    <a class="navBar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navBar__item">
+                    <a class="navBar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navBar__item">
+                    <a class="navBar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navBar__item">
+                    <a class="navBar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../image/multimedia/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+    <p class="Footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
 </body>
 </html>
